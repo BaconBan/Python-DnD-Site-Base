@@ -1,0 +1,27 @@
+{% extends "Main Template.html" %}
+{% block body %}
+<form method="POST" action="/update">
+    Confirm previous password: <input type="password" name="oldPassword"><br>
+    Create new Password: <input type="password" name="newPassword"><br>
+    Character Race: <select name="race">
+        <option value="Human">Human</option>
+        <option value="Dwarf">Dwarf</option>
+        <option value="Elf">Elf</option>
+        <option value="Dragonborn">Dragonborn</option>
+        <option value="Tabaxi">Tabaxi</option>
+        <option value="Goblin">Goblin</option>
+        <option value="Orc">Orc</option>
+        <option value="Aaracokra">Aaracokra</option>
+        <option value="Kenku">Kenku</option>
+    </select>
+    Character Class: <select name="class">
+        <option value="Artificer">Artificer</option>
+        <option value="Barbarian">Barbarian</option>
+        <option value="Rogue">Rogue</option>
+        <option value="Cleric">Cleric</option>
+        <option value="Bard">Bard</option>
+        <option value="Sorcerer">Sorcerer</option>
+        <option value="Wizard">Wizard</option>
+    </select>
+</form>
+{% endblock %}
